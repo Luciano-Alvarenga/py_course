@@ -1,0 +1,5 @@
+print('-=-' * 20)
+print('Faça um programa que pergunte o nome do usuário e diga, Olá fulano muito prazer em te conhecer!')
+print('-=-' * 20)
+name = input('Qual é o seu nome? ').strip()
+print(f'Olá {name}, muito prazer em te conhecer!')
