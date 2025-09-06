@@ -1,0 +1,21 @@
+# A) Quantas vezes apareceu o número nove.
+# B) Em que posição foi digitado o número 3.
+# C) Quais foram os números pares.
+
+numbers = (
+    int(input('Digite o 1º número: ')),
+    int(input('Digite o 2º número: ')),
+    int(input('Digite o 3º número: ')),
+    int(input('Digite o 4º número: '))
+)
+
+print(f"A) O número 9 apareceu {numbers.count(9)} ve(zes).")
+
+if 3 in numbers:
+    print(f"B) O número 3 apareceu na posição {numbers.index(3)+1}.")
+
+else:
+    print("B) O número 3 não foi digitado.")
+
+    even_number = [n for n in numbers if n % 2 == 0]
+    print(f'C) Os números pares digitados foram {even_number if even_number else 'Nenhum'}')

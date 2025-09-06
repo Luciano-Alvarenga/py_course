@@ -8,29 +8,29 @@ print('=' * 30)
 print('{:^30}'.format('Caixa Eletrônico'))
 print('=' * 30)
 
-
 amount = int(input('Qual o valor a ser sacado?: '))
 
-bill = 50
-bill_count = 0
+banknote = 50
+banknote_count = 0
 
 while True:
-    if amount >= bill:
-        amount -= bill
-        bill_count += 1
+    if amount >= banknote:
+        amount -= banknote
+        banknote_count += 1
 
     else:
-        if bill_count > 0:
-            print(f'{bill_count} cédula(s) R${bill}')
+        if banknote_count > 0:
+            print(f'{banknote_count} cédula(s) R${banknote}')
 
-        if bill == 50:
-            bill = 20
-        elif bill == 20:
-            bill = 10
-        elif bill == 10:
-            bill = 1
-        elif bill == 1:
-            bill = 1
-        bill_count = 0
+        if banknote == 50:
+            banknote = 20
+        elif banknote == 20:
+            banknote = 10
+        elif banknote == 10:
+            banknote = 1
+        elif banknote == 1:
+            banknote = 1
+        banknote_count = 0
+        
         if amount == 0:
             break
